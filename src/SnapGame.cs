@@ -11,6 +11,8 @@ namespace CardGames
             Bitmap cards;
             cards = SwinGame.LoadBitmapNamed ("Cards", "Cards.png");
             SwinGame.BitmapSetCellDetails (cards, 167, 250, 13, 5, 53);      // set the cells in the bitmap to match the cards
+	    SwinGame.LoadFontNamed("GameFont","Chunkfive.otf",24);
+	    SwinGame.DrawText("" + myGame.Score(0),Color.White, "GameFont",0,30);
         }
 
 		/// <summary>
